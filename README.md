@@ -63,54 +63,66 @@ bash
 Copy code
 git clone https://github.com/your-username/richters-predictor.git
 cd richters-predictor
-2. Create and activate a virtual environment:
+
+# 2. Create and activate a virtual environment:
 bash
 Copy code
 conda create -n earthquake-prediction python=3.8
 conda activate earthquake-prediction
-3. Install dependencies:
+
+# 3. Install dependencies:
 bash
 Copy code
 pip install -r requirements.txt
-Usage
-Step 1: Load the Data
+
+# Usage
+
+# Step 1: Load the Data
 Run the following script to load and prepare the data:
 
 bash
 Copy code
 python src/data_loading.py
-Step 2: Feature Engineering
+
+# Step 2: Feature Engineering
 Apply feature engineering to improve model performance:
 
 bash
 Copy code
 python src/feature_engineering.py
-Step 3: Train the Model
+
+# Step 3: Train the Model
 Train the XGBoost model using the processed data:
 
 bash
 Copy code
 python src/model_training.py
-Step 4: Make Predictions
+
+
+# Step 4: Make Predictions
 Once the model is trained, use it to make predictions on the test dataset:
 
 bash
 Copy code
 python src/prediction.py
-Modeling Approach
+
+# Modeling Approach
 The key steps in building the predictive model include:
 
-Data Preprocessing: Cleaning and handling missing data.
-Feature Engineering: Creating new features from existing ones to improve model performance.
-Model Training: Using XGBoost, a robust and efficient algorithm for structured data, with hyperparameter tuning.
-Evaluation: Performance is evaluated using metrics like accuracy, F1-score, and confusion matrix to ensure model effectiveness in predicting the correct damage class.
-Results
+# Data Preprocessing: Cleaning and handling missing data.
+
+# Feature Engineering: Creating new features from existing ones to improve model performance.
+
+# Model Training: Using XGBoost, a robust and efficient algorithm for structured data, with hyperparameter tuning.
+
+# Evaluation:Performance is evaluated using metrics like accuracy, F1-score, and confusion matrix to ensure model effectiveness in predicting the correct damage class.
+
+# Results
 Model Accuracy: Achieved an accuracy of X% on the test data.
 F1-Score: The F1-score for the model across different damage levels is Y.
 The model showed good performance, particularly in distinguishing between low and high levels of damage.
 Contributing
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
-
 Fork the repository.
 Create a feature branch (git checkout -b feature-name).
 Commit your changes (git commit -m 'Add some feature').
