@@ -1,30 +1,41 @@
-Richter's Predictor: Modeling Earthquake Damage
-Table of Contents
+# Richter's Predictor: Modeling Earthquake Damage
+#Table of Contents
 Project Overview
+
 Dataset
+
 Problem Statement
+
 Project Structure
+
 Installation
+
 Usage
+
 Modeling Approach
+
 Results
+
 Contributing
+
 License
-Project Overview
+
+# Project Overview
 Richter's Predictor is a machine learning project aimed at predicting the level of damage caused to buildings by an earthquake. The goal is to model the severity of building damage using structured data, including geographic, geologic, and structural information.
 
 This project uses various machine learning techniques, including XGBoost, to predict the extent of damage based on features like building characteristics and geographic location.
 
-Dataset
+# Dataset
 The dataset comes from the DrivenData competition. It contains information about buildings that were impacted by the 2015 Gorkha earthquake in Nepal.
 
-Features: Structural characteristics of the buildings (e.g., building materials, foundation type, etc.).
+# Features: Structural characteristics of the buildings (e.g., building materials, foundation type, etc.).
 Target Variable: damage_grade – the level of damage caused by the earthquake, represented as 1 (low damage), 2 (medium damage), or 3 (severe damage).
 Files:
 train_values.csv: Training dataset features.
 train_labels.csv: Training dataset target variable (damage_grade).
 test_values.csv: Test dataset features (no target variable).
-Problem Statement
+
+# Problem Statement
 The task is to predict the damage_grade of buildings after an earthquake, which is a multi-class classification problem with the following classes:
 
 1: Low damage
@@ -32,7 +43,7 @@ The task is to predict the damage_grade of buildings after an earthquake, which 
 3: Severe damage
 The goal is to build a model that can accurately predict these damage levels based on the building features provided in the dataset.
 
-Project Structure
+# Project Structure
 bash
 Copy code
 ├── data/                   
@@ -45,8 +56,9 @@ Copy code
 ├── notebooks/              # Jupyter notebooks for experimentation
 ├── README.md               # Project description
 ├── requirements.txt        # Required dependencies
-Installation
-1. Clone the repository:
+
+# Installation
+# 1. Clone the repository:
 bash
 Copy code
 git clone https://github.com/your-username/richters-predictor.git
