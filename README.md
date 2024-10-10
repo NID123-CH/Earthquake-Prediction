@@ -44,8 +44,7 @@ The task is to predict the damage_grade of buildings after an earthquake, which 
 The goal is to build a model that can accurately predict these damage levels based on the building features provided in the dataset.
 
 # Project Structure
-bash
-Copy code
+
 ├── data/                   
 │   ├── 01_raw/             # Raw data (train and test files)
 ├── src/
@@ -56,6 +55,7 @@ Copy code
 ├── notebooks/              # Jupyter notebooks for experimentation
 ├── README.md               # Project description
 ├── requirements.txt        # Required dependencies
+
 
 # Installation
 # 1. Clone the repository:
